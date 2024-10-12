@@ -1,0 +1,76 @@
+/*RESET*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*BASE STYLES*/
+body {
+  font-family: "Inter", sans-serif;
+  background-color: rgb(225, 227, 230);
+  /* background-color: #242526; */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  background-color: #fff;
+  width: 400px;
+  height: 490px;
+  border-radius: 8px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.top {
+  background-color: #f2f2f2;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-heading {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.balance-number {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.overview {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 30px;
+}
+
+.section {
+  flex: 1;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section:nth-child(2) {
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.second-heading {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+}
