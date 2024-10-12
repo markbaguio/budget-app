@@ -5,6 +5,17 @@
   padding: 0;
 }
 
+input {
+  font: inherit;
+  border: none;
+}
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
 /*BASE STYLES*/
 body {
   font-family: "Inter", sans-serif;
@@ -23,6 +34,9 @@ body {
   border-radius: 8px;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 35px;
 }
 
 .top {
@@ -73,4 +87,39 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 3px;
+}
+
+.form {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: auto;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 15px 25px;
+  cursor: pointer;
+  background: #0072e4;
+  width: 100%;
+  border-radius: 5000px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 10px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: #0068cf;
 }
