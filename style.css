@@ -16,6 +16,22 @@ button {
   font: inherit;
 }
 
+ul {
+  list-style: none;
+}
+
+/*KEYFRAMES*/
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(15px) scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 /*BASE STYLES*/
 body {
   font-family: "Inter", sans-serif;
@@ -27,10 +43,15 @@ body {
   align-items: center;
 }
 
+.wrapper {
+  display: flex;
+  height: 490px;
+}
+
 .app {
   background-color: #fff;
   width: 400px;
-  height: 490px;
+  height: 100%;
   border-radius: 8px;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
   overflow: hidden;
@@ -122,4 +143,59 @@ body {
 
 .btn:hover {
   background: #0068cf;
+}
+
+.transactions-section {
+  margin-left: 30px;
+  width: 250px;
+}
+
+.third-heading {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.transaction {
+  background: #fff;
+  padding: 15px 20px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  animation: fade-in 0.5s;
+}
+
+.transaction--income {
+  border-right: 5px solid green;
+}
+
+.transaction--expense {
+  border-right: 5px solid red;
+}
+
+.transaction__amount {
+}
+
+.transaction__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.85);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.transaction:hover .transaction__btn {
+  transform: translate(-50%, -50%);
 }
